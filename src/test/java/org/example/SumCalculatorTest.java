@@ -14,13 +14,11 @@ class SumCalculatorTest {
         calculator = new SumCalculator();
     }
 
-
     @Test
     @DisplayName("Test sum 9")
     void testSum() {
         assertEquals(45, calculator.sum(9));
     }
-
 
     @Test
     @DisplayName("Test sum 1")
