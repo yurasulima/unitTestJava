@@ -33,6 +33,12 @@ class SumCalculatorTest {
     }
 
     @Test
+    @DisplayName("Test sum 2")
+    void testSum2() {
+        assertEquals(3, calculator.sum(2));
+    }
+
+    @Test
     @DisplayName("Test sum 0 IllegalArgumentException")
     void testSumWithZero() {
         assertThrows(IllegalArgumentException.class, () -> calculator.sum(0));
